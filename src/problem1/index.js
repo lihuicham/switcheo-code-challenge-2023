@@ -35,6 +35,6 @@ var sum_to_n_c = function(n) {
 };
 
 // Testing - all should give the same output 
-console.log("Answer A : " + sum_to_n_a(0))
-console.log("Answer B : " + sum_to_n_b(0))
-console.log("Answer C : " + sum_to_n_c(0))
+console.log("Answer A : " + sum_to_n_a(5))
+console.log("Answer B : " + sum_to_n_b(5))
+console.log("Answer C : " + sum_to_n_c(5))

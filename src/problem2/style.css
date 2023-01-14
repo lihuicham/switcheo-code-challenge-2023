@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --dark-background: rgba(22, 21, 21, 1);
+    --first-text-color: rgba(116, 232, 232, 1);
+    --second-text-color: rgba(143, 143, 143, 1);
+    --box-color: rgba(0, 0, 0, 1);
+    --form-color: rgb(26, 25, 25);
+}
+
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--dark-background);
+}
+
+.box {
+    position: relative;
+    width: 380px;
+    height: 600px;
+    background: var(--box-color);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.box::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 600px;
+    background: linear-gradient(0deg, transparent, var(--first-text-color), transparent);
+    transform-origin: bottom right;
+    animation: animate 10s linear infinite;
+}
+
+.box::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 600px;
+    background: linear-gradient(0deg, transparent, var(--first-text-color), transparent);
+    transform-origin: bottom right;
+    animation: animate 10s linear infinite;
+    animation-delay: -5s;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.form {
+    position: absolute;
+    inset: 2px;
+    border-radius: 8px;
+    background: var(--form-color);
+    z-index: 10;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form h2 {
+    color: var(--first-text-color);
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+
+.input-box {
+    position: relative;
+    width: 300px;
+    margin-top: 35px;
+}
+
+.input-box input {
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--form-color);
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    z-index: 10;
+}
+
+.input-box span {
+    position: absolute;
+    left: 0;
+    padding: 20px 0px 10px;
+    font-size 1em;
+    color: var(--second-text-color);
+    pointer-events: none;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+
+.input-box input:valid ~ span, 
+.input-box input:focus ~ span {
+    color: var(--first-text-color);
+    transform: translateY(-34px);
+    font-size: 0.75em;
+}
+
+.input-box i {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--first-text-color);
+    border-radius: 4px;
+    transition: 0.5s;
+    pointer-events: none;
+    z-index: 9;
+}
+
+.input-box input:valid ~ i, 
+.input-box input:focus ~ i {
+    height: 44px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.links a {
+    margin: 10px 0;
+    font-size: 0.75em;
+    color: var(--second-text-color);
+    text-decoration: none;
+}
+
+.links a:hover {
+    color: var(--first-text-color);
+}
+
+input[type="submit"] {
+    border: none;
+    outline: none;
+    background: var(--first-text-color);
+    padding: 11px 25px;
+    margin-top: 35px;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+input[type="submit"]:active {
+    opacity: 0.8;
+}
