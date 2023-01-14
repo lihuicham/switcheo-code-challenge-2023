@@ -146,7 +146,7 @@ body {
 }
 
 .links a {
-    margin: 10px 0;
+    margin: 12px 0;
     font-size: 0.75em;
     color: var(--second-text-color);
     text-decoration: none;
@@ -157,6 +157,7 @@ body {
 }
 
 input[type="submit"] {
+    position: relative;
     border: none;
     outline: none;
     background: var(--first-text-color);
@@ -169,4 +170,33 @@ input[type="submit"] {
 
 input[type="submit"]:active {
     opacity: 0.8;
+}
+
+
+input[type="submit"] span {
+    position: absolute;
+    background: red;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    border-radius: 50%;
+    animation-name: animate-button;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+@keyframes animate-button {
+    0% {
+        width: 0px;
+        height: 0px;
+        opacity: 0.5;
+    }
+
+    100% {
+        width: 500px;
+        height: 500px;
+        opacity: 0;
+    }
 }
