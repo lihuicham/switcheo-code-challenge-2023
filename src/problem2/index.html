@@ -26,7 +26,7 @@
 
     <!-- ======== TRANSACTION FORM ======== -->
     <div class="box active">
-        <div class="form active">
+        <form class="form active">
             <h2>Transaction Form</h2>
             <div class="input-box">
                 <input id="eth" type="text" required>
@@ -53,10 +53,10 @@
             </div>
             <div class="pay-box">
                 <i class="fa-solid fa-arrow-up switcheo-arrow"></i>
-                <input type="submit" value="Pay" name="pay-button">
+                <input type="submit" value="Pay" name="pay-button" onclick="return validation()">
             </div>
 
-        </div>
+        </form>
     </div>
 
     <!-- ======== POPUP ======== -->
