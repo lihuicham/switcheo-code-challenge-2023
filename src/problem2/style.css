@@ -161,16 +161,32 @@ body {
     color: var(--first-text-color);
 }
 
+.pay-box {
+    display: flex;
+    flex-direction: row;
+    margin-top: 35px;
+}
+
+.switcheo-arrow {
+    position: absolute;
+    color: var(--box-color);
+    margin-top: 13px;
+    z-index: 100;
+    left: 9.5em;
+    transform: rotate(45deg);
+}
+
 input[type="submit"] {
     position: relative;
     border: none;
     outline: none;
     background: var(--first-text-color);
     padding: 11px 25px;
-    margin-top: 35px;
+    /* margin-top: 35px; */
     border-radius: 4px;
     font-weight: 600;
     cursor: pointer;
+    width: 100%;
 }
 
 /* input[type="submit"]:active {
@@ -178,10 +194,10 @@ input[type="submit"] {
 } */
 
 input[type="submit"]:hover {
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
-
+/* button ripple effect code - not working */
 input[type="submit"] span {
     position: absolute;
     background: white;
