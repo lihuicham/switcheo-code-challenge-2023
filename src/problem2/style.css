@@ -170,10 +170,12 @@ body {
 .switcheo-arrow {
     position: absolute;
     color: var(--box-color);
-    margin-top: 13px;
+    margin-top: 16.5px;
     z-index: 100;
-    left: 9.5em;
+    left: 9.3em;
     transform: rotate(45deg);
+    font-size: 16px;
+    font-weight: 800;
 }
 
 input[type="submit"] {
@@ -185,6 +187,7 @@ input[type="submit"] {
     /* margin-top: 35px; */
     border-radius: 4px;
     font-weight: 600;
+    font-size: 18px;
     cursor: pointer;
     width: 100%;
 }
