@@ -5,9 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fancy Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+
+    <!-- ======== TOAST NOTIFICATION ======== -->
+    <div class="toast">
+        <div class="toast-content">
+            <i class="fas fa-solid fa-coins coin"></i>
+            <div class="toast-message">
+                <span class="text text1">Securing your payment</span>
+                <span class="text text2"> 🚀 BTC is up 5.70% ! It's now $19,941.78</span>
+            </div>
+        <i class="fa-solid fa-xmark close"></i>
+
+        <div class="progress"></div>
+        </div>
+    </div>
+
+    <!-- ======== TRANSACTION FORM ======== -->
     <div class="box">
         <div class="form">
             <h2>Transaction Form</h2>
@@ -30,7 +47,7 @@
                 <a href="#">Report issues</a>
                 <a href="#">How to make payment ?</a>
             </div>
-            <input type="submit" value="Pay" name="pay-button">
+                <input type="submit" value="Pay" name="pay-button">
         </div>
     </div>
     <script src="./script.js"></script>
