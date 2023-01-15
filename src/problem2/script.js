@@ -2,6 +2,8 @@ const button = document.querySelector('input[name="pay-button"]');
 const toast = document.querySelector('.toast');
 const closeIcon = document.querySelector('.close');
 const progress = document.querySelector('.progress');
+const popup = document.querySelector('.popup');
+const dismissButton = document.getElementById('dismiss-popup-button');
 
 // Button ripple effect code - but not working
 button.addEventListener('click', function(e) {
@@ -18,10 +20,12 @@ button.addEventListener('click', function(e) {
     }, 1000);
 });
 
+// ======== TOAST MESSAGE JS ========
 
 button.addEventListener('click', () => {
     toast.classList.add('active');
     progress.classList.add('active');
+    popup.classList.add('active');
 
     setTimeout(() => {
         toast.classList.remove('active');
@@ -38,4 +42,9 @@ closeIcon.addEventListener('click', () => {
     setTimeout(() => {
         toast.classList.remove('active');
     }, 300)
+})
+
+// ======== SUCCESS POPUP JS ========
+dismissButton.addEventListener('click', () => {
+    popup.classList.remove('active');
 })
