@@ -29,19 +29,19 @@
         <form class="form active">
             <h2>Transaction Form</h2>
             <div class="input-box">
-                <input id="eth" type="text">
+                <input id="eth" type="text" required oninvalid="this.setCustomValidity('Please enter ETH address here.')" oninput="this.setCustomValidity('')">
                 <span>ETH Address</span>
                 <i></i>
             </div>
             <span class="eth-error-message"></span>
             <div class="input-box">
-                <input id="amount" type="text"> 
+                <input id="amount" type="text" required oninvalid="this.setCustomValidity('Please enter the amount you wish to send here.')" oninput="this.setCustomValidity('')"> 
                 <span>Amount to Send</span>
                 <i></i>
             </div>
             <span class="amount-error-message"></span>
             <div class="input-box">
-                <input id="otp" type="password">
+                <input id="otp" type="password" required oninvalid="this.setCustomValidity('Please enter your OTP here for authentication')" oninput="this.setCustomValidity('')">
                 <span>OTP Authentication</span>
                 <i></i>
             </div>
