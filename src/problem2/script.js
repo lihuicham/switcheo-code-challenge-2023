@@ -80,10 +80,8 @@ form.addEventListener('submit', (event) => {
     const otpBoolean = validateOTP();
 
     if (ethBoolean === false || amountBoolean === false || otpBoolean === false) {
-        console.log('failed to submitted');
         return false;
     } else {
-        console.log('form submitted');
         // ======== TOAST MESSAGE JS ========
         toast.classList.add('active');
         progress.classList.add('active');

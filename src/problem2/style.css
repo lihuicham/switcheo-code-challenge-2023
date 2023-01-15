@@ -38,7 +38,7 @@ body {
     background: var(--box-color);
     border-radius: 8px;
     overflow: hidden;
-    opacity: 0; /*remove*/
+    opacity: 0;
 }
 
 .box.active {
@@ -89,7 +89,7 @@ body {
     padding: 50px 40px;
     display: flex;
     flex-direction: column;
-    opacity: 0; /*remove*/
+    opacity: 0;
 }
 
 .form.active {
