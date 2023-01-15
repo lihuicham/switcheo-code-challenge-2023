@@ -51,9 +51,14 @@ const validateAmount = () => {
     if (amountValue === '') {
         amountErrorMessage.innerText = 'Please enter the amount you wish to send.';
         return false;
+    } else if (!/^[0-9]+$/.test(amountValue)){
+        amountErrorMessage.innerText = 'Whole numbers only, no decimals.';
+        return false;
     } else {
         amountErrorMessage.innerText = '';
     }
+
+
 }
 
 const validateOTP = () => {
