@@ -10,6 +10,7 @@
     --toast-color: rgb(41, 37, 37);
     --popup-color: rgb(41, 37, 37);
     --success-green: rgb(12, 175, 12);
+    --error-message: rgb(255, 56, 96)
 }
 
 * {
@@ -37,7 +38,11 @@ body {
     background: var(--box-color);
     border-radius: 8px;
     overflow: hidden;
-    opacity: 1; /*remove*/
+    opacity: 0; /*remove*/
+}
+
+.box.active {
+    opacity: 1;
 }
 
 .box::before {
@@ -84,7 +89,11 @@ body {
     padding: 50px 40px;
     display: flex;
     flex-direction: column;
-    opacity: 1; /*remove*/
+    opacity: 0; /*remove*/
+}
+
+.form.active {
+    opacity: 1;
 }
 
 .form h2 {
@@ -155,7 +164,7 @@ body {
 }
 
 .links a {
-    margin: 12px 0;
+    margin: 25px 0;
     font-size: 0.75em;
     color: var(--second-text-color);
     text-decoration: none;
@@ -237,7 +246,7 @@ input[type="submit"] span {
 
 .toast {
     position: absolute;
-    top: 25px;
+    top: 30px;
     right: 30px;
     border-radius: 12px;
     background: var(--toast-color);
@@ -425,4 +434,16 @@ input[type="submit"] span {
 .popup .dismiss-button button:hover {
     color: white;
     background: var(--popup-color);
+}
+
+/* ======== FORM VALIDATION ======== */
+.eth-error-message,
+.amount-error-message,
+.otp-error-message {
+    color: var(--error-message);
+    margin-top: 5px;
+    margin-left: 3px;
+    margin-bottom: -18px;
+    font-weight: 500;
+    font-size: 13px;
 }

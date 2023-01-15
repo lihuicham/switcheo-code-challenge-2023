@@ -25,24 +25,28 @@
     </div>
 
     <!-- ======== TRANSACTION FORM ======== -->
-    <div class="box">
-        <div class="form">
+    <div class="box active">
+        <div class="form active">
             <h2>Transaction Form</h2>
             <div class="input-box">
-                <input type="text" required="required">
+                <input id="eth" type="text" required>
                 <span>ETH Address</span>
                 <i></i>
             </div>
+            <span class="eth-error-message"></span>
             <div class="input-box">
-                <input type="number" required="required">
+                <!-- remember to change type back to number ! -->
+                <input id="amount" type="text" required> 
                 <span>Amount to Send</span>
                 <i></i>
             </div>
+            <span class="amount-error-message"></span>
             <div class="input-box">
-                <input type="password" required="required">
+                <input id="otp" type="password" required>
                 <span>OTP Authentication</span>
                 <i></i>
             </div>
+            <span class="otp-error-message"></span>
             <div class="links">
                 <a href="#">Report issues</a>
                 <a href="#">How to make payment ?</a>
@@ -63,7 +67,7 @@
             </div>
             <div class="popup-message">
                 <span class="popup-text pop-text1">Payment Success !</span>
-                <span class="popup-text pop-text2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi eos nobis</span>
+                <span class="popup-text pop-text2">Thank you for choosing Switcheo Labs.</span>
             </div>
             <div class="dismiss-button">
                 <button id="dismiss-popup-button">
