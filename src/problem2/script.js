@@ -71,16 +71,19 @@ const validateOTP = () => {
     }
 }
 
-function validation() {
+
+form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    
     const ethBoolean = validateETH();
     const amountBoolean = validateAmount();
     const otpBoolean = validateOTP();
 
     if (ethBoolean === false || amountBoolean === false || otpBoolean === false) {
+        console.log('failed to submitted');
         return false;
     } else {
-        form.submit();
-
+        console.log('form submitted');
         // ======== TOAST MESSAGE JS ========
         toast.classList.add('active');
         progress.classList.add('active');
@@ -99,4 +102,5 @@ function validation() {
             popup.classList.add('active');
         }, 5000)
     }
-}
+})
+

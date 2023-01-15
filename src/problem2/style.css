@@ -126,7 +126,7 @@ body {
     position: absolute;
     left: 0;
     padding: 20px 0px 10px;
-    font-size 1em;
+    font-size: 1em;
     color: var(--second-text-color);
     pointer-events: none;
     letter-spacing: 0.05em;
