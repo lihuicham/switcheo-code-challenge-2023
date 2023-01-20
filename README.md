@@ -8,9 +8,7 @@
 <br>
 
 ## Problem 1 : Three ways to sum to n 
-Implemented using iteration (for loop and while loop), summation formula and recursion.
-
-<br>
+Implemented using iteration (for loop and while loop), summation formula and recursion.  
 
 Inspect page to test out code in console. 
 
@@ -20,9 +18,7 @@ For best viewing experience, open it using Chrome browser on desktop.
 <br>
 
 ### Design & Implementation (UI/UX & Frontend)
-<br>
-
-#### (A) Dark theme design and animation for transition 
+### (A) Dark theme design and animation for transition 
 <br>
 
 ![problem1-fancyform](./assets/problem1-fancyform.png)
@@ -33,7 +29,7 @@ For best viewing experience, open it using Chrome browser on desktop.
 
 ![problem1-error](./assets/problem1-error.png)
 
-### (C) Mock interaction with backend service for loading using toast notification with timeout delay 
+### (C) Mock interaction with backend service for loading using toast notification
 <br>
 
 ![problem1-toast](./assets/problem1-loadingtoast.png)
