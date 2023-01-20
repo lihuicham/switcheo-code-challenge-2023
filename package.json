@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/lihuicham/switcheo-code-challenge-2023#readme",
   "dependencies": {
-    "ethers": "^5.7.2"
+    "ethers": "^5.7.2",
+    "ts-node": "^10.9.1"
   },
   "devDependencies": {
     "typescript": "^4.9.4"
