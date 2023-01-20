@@ -66,5 +66,19 @@ JSON for price-api : [link](https://my-json-server.typicode.com/lihuicham/price-
 
 **Completed problem 3 with the mock data endpoint I created.**
 
+## Problem 4 : Interacting with Chain 
 
+Use NPM module [ether.js](https://docs.ethers.org/v5/) for this problem. 
+
+**Issues faced for this problem :**  
+Unsure about how to create the provider for Binance Smart Chain. 
+
+**Solution to the problem :**  
+
+```typescript
+const API_KEY: string = 'ZYSINASEZYV8YSR4HVEWYU288XDS8VZK5V';  // my binance app API KEY
+const provider = new ethers.providers.JsonRpcProvider(`https://api.bscscan.com/&apikey=${API_KEY}`);  
+```
+
+## Connect with Li Hui
 [Personal Website](https://www.lihuicham.com/) | [LinkedIn](https://www.linkedin.com/in/lihuicham/) | [GitHub](https://github.com/lihuicham) | [Medium](https://medium.com/@lihuicham)
