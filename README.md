@@ -60,7 +60,7 @@ Issue 2 : After changing `mode: no-cors`, HTTP status code 0 is shown (no respon
 
 ![problem3-nocors](./assets/problem3-nocors.png)
 
-**Solution to the problem :**
+**Solution to the problem :**  
 Created a mock endpoint by myself : [price-api](https://github.com/lihuicham/price-api)  
 JSON for price-api : [link](https://my-json-server.typicode.com/lihuicham/price-api/data)
 
