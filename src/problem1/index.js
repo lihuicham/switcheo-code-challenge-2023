@@ -27,14 +27,15 @@ var sum_to_n_b = function(n) {
 };
 
 var sum_to_n_c = function(n) {
-    // Solution 3 - recursion 
+    // Solution 3 - Recursion 
     if (n === 0) {
         return n;
     } 
     return n + sum_to_n_c(n -1);
 };
 
-// Testing - all should give the same output 
+// Testing - all methods should give the same output 
+// Uncomment below code to check output in console 
 console.log("Answer A : " + sum_to_n_a(5))
 console.log("Answer B : " + sum_to_n_b(5))
 console.log("Answer C : " + sum_to_n_c(5))

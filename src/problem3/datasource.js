@@ -46,4 +46,15 @@ class Price {
 
 ds = new Datasource('https://my-json-server.typicode.com/lihuicham/price-api/data');
 
+// Testing - uncomment below code to check output in console 
+
+// ds.getPrices()
+//     .then(prices => {
+//         prices.forEach(price => {
+//             console.log(`Mid price for ${ price.pair } is ${ price.mid() } ${ price.quote() }.`);
+//         });
+//     }).catch(error => {
+//         console.err(error);
+//     });
+
 
