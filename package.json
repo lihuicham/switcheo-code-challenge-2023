@@ -1,0 +1,22 @@
+{
+  "name": "switcheo-code-challenge-2023",
+  "version": "1.0.0",
+  "description": "## Cham Li Hui ### Frontend Software Engineer Intern",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lihuicham/switcheo-code-challenge-2023.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lihuicham/switcheo-code-challenge-2023/issues"
+  },
+  "homepage": "https://github.com/lihuicham/switcheo-code-challenge-2023#readme",
+  "dependencies": {
+    "ethers": "^5.7.2"
+  }
+}
