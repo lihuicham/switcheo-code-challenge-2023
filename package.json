@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/lihuicham/switcheo-code-challenge-2023#readme",
   "dependencies": {
+    "@truffle/hdwallet-provider": "^2.1.5",
+    "dotenv": "^4.0.0",
     "ethers": "^5.7.2",
     "ts-node": "^10.9.1"
   },
